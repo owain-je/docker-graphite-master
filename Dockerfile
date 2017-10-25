@@ -50,6 +50,7 @@ RUN cd /kube-watch && npm install hashring kubernetes-client json-stream
 add kube-watch.js /kube-watch/kube-watch.js
 
 add entrypoint.sh /entrypoint.sh
+run chmod 755 /entrypoint.sh
 # Nginx
 expose	80
 # Carbon line receiver port
